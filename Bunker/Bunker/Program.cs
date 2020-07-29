@@ -6,7 +6,10 @@ namespace Bunker
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+          
+            Card card1 = new Card();
+            Console.WriteLine(card1.Gender.Data);
+           
         }
     }
 }

@@ -1,8 +1,4 @@
 import requests
-import time
-from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 def getresponse():
     response = requests.get(url)
@@ -48,10 +44,10 @@ url = 'https://randomall.ru/api/custom/gen/758/'
 
 gender = ['Мужской','Женский']
 old = [x for x in range(1,90)]
-prof = []
-kids = []
+profession = []
+childbearing = []
 health = []
-phobias = []
+phobia = []
 character = []
 hobby = []
 additionally = []
@@ -59,10 +55,10 @@ baggage = []
 card1 = []
 card2 = []
 
-indexdict = {2:'prof',
-3:'kids',
+indexdict = {2:'profession',
+3:'childbearing',
 4:'health',
-5:'phobias',
+5:'phobia',
 6:'hobby',
 7:'character',
 8:'additionally',

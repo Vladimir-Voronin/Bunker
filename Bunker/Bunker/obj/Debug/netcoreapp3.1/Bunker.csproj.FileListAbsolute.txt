@@ -1,0 +1,11 @@
+D:\C# Bunker\Bunker\Bunker\bin\Debug\netcoreapp3.1\Bunker.exe
+D:\C# Bunker\Bunker\Bunker\bin\Debug\netcoreapp3.1\Bunker.deps.json
+D:\C# Bunker\Bunker\Bunker\bin\Debug\netcoreapp3.1\Bunker.runtimeconfig.json
+D:\C# Bunker\Bunker\Bunker\bin\Debug\netcoreapp3.1\Bunker.runtimeconfig.dev.json
+D:\C# Bunker\Bunker\Bunker\bin\Debug\netcoreapp3.1\Bunker.dll
+D:\C# Bunker\Bunker\Bunker\bin\Debug\netcoreapp3.1\Bunker.pdb
+D:\C# Bunker\Bunker\Bunker\obj\Debug\netcoreapp3.1\Bunker.csprojAssemblyReference.cache
+D:\C# Bunker\Bunker\Bunker\obj\Debug\netcoreapp3.1\Bunker.AssemblyInfoInputs.cache
+D:\C# Bunker\Bunker\Bunker\obj\Debug\netcoreapp3.1\Bunker.AssemblyInfo.cs
+D:\C# Bunker\Bunker\Bunker\obj\Debug\netcoreapp3.1\Bunker.dll
+D:\C# Bunker\Bunker\Bunker\obj\Debug\netcoreapp3.1\Bunker.pdb
