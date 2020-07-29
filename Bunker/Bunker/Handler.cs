@@ -17,7 +17,14 @@ namespace Bunker
             return s;
         }
 
-
+        //Выбор рандомного файла из папки, возвращает название файла и его содержание (кортежом)
+        public static (string, string) RandomCatastrophe()
+        {
+            var rand = new Random();
+            var files = Directory.GetFiles(@"D:\C# Bunker\Bunker\Catastrophe", "*.txt");
+            var file = files[rand.Next(files.Length)];
+            return (files[rand.Next(files.Length)], File.ReadAllText(file, Encoding.UTF8));
+        }
     }
 
 }

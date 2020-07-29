@@ -10,20 +10,38 @@ namespace Bunker
     {
         //Позиция может быть открытой и закрытой (закрыта по умолчанию)
         public bool Open { get; set; } = false;
+
         //Хранит в себе значение (главное свойство в классе)
         public string Data { get; set; }
 
-        //Перегрузка операции преобразования, чтобы можно было явно
-        //присваивать позиции значение
-        public static implicit operator Position(string data)
+        //Уровень скрытности будет контролировать скрытность позиций на разных раундах
+        //Чем выше скрытность, тем позже будет открыта позиция
+        public byte Levelhide { get; set; }
+
+        public Position()
         {
-            return new Position { Data = data };
+        }
+               
+        public Position(string file, byte levelhide = 0)
+        {
+            Levelhide = levelhide;
+            Refresh(file); //Data получает значение
         }
 
-        //
+        //Обновление позиции (возможно при нажатии соответствующей кнопки)
         public void Refresh(string file)
         {
-            Handler.RandomStrFile(@"D:\C# Bunker\Bunker\data\{file}");
+            Data = Handler.RandomStrFile(file);
+        }
+    }
+
+    
+    class Catastrophe : Position
+    {
+        public string Description { get; set; }
+        public Catastrophe()
+        {
+            (Data, Description) = Handler.RandomCatastrophe();
         }
     }
 }
