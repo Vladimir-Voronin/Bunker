@@ -16,13 +16,13 @@ namespace Bunker
 
         //Уровень скрытности будет контролировать скрытность позиций на разных раундах
         //Чем выше скрытность, тем позже будет открыта позиция
-        public byte Levelhide { get; set; }
+        public int Levelhide { get; set; }
 
         public Position()
         {
         }
                
-        public Position(string file, byte levelhide = 0)
+        public Position(string file, int levelhide = 0)
         {
             Levelhide = levelhide;
             Refresh(file); //Data получает значение

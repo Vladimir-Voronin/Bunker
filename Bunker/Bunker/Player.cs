@@ -10,7 +10,10 @@ namespace Bunker
         public string Name { get; set; }
 
         //Номер экземпляра по времени создания
-        public static byte Number { get; set; }
+        public static int Number { get; set; }
+
+        //Количество голосов за игрока (расширение во front-end)
+        public int Vote { get; set; }
 
         //Находится ли игрок в игре
         public bool IsAlive { get; set; } = false;
@@ -39,6 +42,7 @@ namespace Bunker
         public void DeletePlayer()
         {
             PlayerCard = null;
+            this.IsAlive = false;
             Number--;
             Name = null;
             PlayersList.Remove(this);
@@ -50,9 +54,9 @@ namespace Bunker
             PlayerCard = null;
         }
 
-        public void Talking()
+        public void Talking(Game game)
         {
-            if(Game.timetalkalive != 0)
+            if(game.TimeTalkAlive != 0)
             {
                 //Таймер
             }
